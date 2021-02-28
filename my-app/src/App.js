@@ -1,10 +1,8 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Years from './components/common/Year/Year';
-
 import Search from './components/common/Search/Search';
 import {Routes} from './components/routes';
 
@@ -17,20 +15,19 @@ const SECTIONS = [
 
 const App = (props) => { 
 
-  return<>   
-      
-      <div className="app-wrapper">
-        <Header/> 
-        <Navbar  year={props.state.year} league_id={props.state.leagues.league.id} team_id={props.state.teams.team.id} sections={SECTIONS}/> 
-        <div className="filters"> 
-          <Years year={props.state.year} dispatch={props.dispatch}/>
-          <Search  dispatch={props.dispatch}/>
-        </div>
+  return<>       
+    <div className="app-wrapper">
+      <Header/> 
+      <Navbar  year={props.state.year} league_id={props.state.leagues.league.id} team_id={props.state.teams.team.id} sections={SECTIONS}/> 
+      <div className="filters"> 
+        <Years year={props.state.year} dispatch={props.dispatch}/>
+        <Search  dispatch={props.dispatch}/>
+      </div>
       <div className="app-wrapper-content">
         <Routes store={props.store} />
       </div>    
     </div>
   </>  
-}//class
+}
 
 export default App;

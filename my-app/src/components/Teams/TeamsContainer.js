@@ -12,52 +12,37 @@ import Preloader from '../common/Preloader/Preloader';
 class TeamsContainer extends React.Component {
 	
 	componentDidMount(){
-
     let league_id = this.props.match.params.league_id;
 		let API_KEY = process.env.REACT_APP_USER_TOKEN;
     	
-    	let year = this.props.year;
+   	let year = this.props.year;
+   
+   	const apiUrl = "https://api.football-data.org/v2/competitions/"+league_id+"/teams?season="+year;
 
-     
-    	const apiUrl = "https://api.football-data.org/v2/competitions/"+league_id+"/teams?season="+year;
-
-    	fetch(apiUrl, {
-      		method: 'GET',
-      		headers: {
-         	  'X-Auth-Token': API_KEY
-      		}
-    	})
-      .then((response) => response.json())
-      .then((response) => {
-        console.log({matches:response.teams});
-        this.props.setListTeamsCreator(response.teams);
-        if (this.props.league_id !== this.props.match.params.league_id)
-           {let league={id:response.competition.code, name: response.competition.name};
-            this.props.setLeagueCreator(league);}
-          //this.setState({isLoaded: true});
-      })
-      .then((error) => {
-          this.setState({false: true});
-          this.setState({error});
-      })    	
-    	.catch(error => console.log('parsing failed', error))
-
-   //setlistLeaguesCreator(this.props.Data.matches);
-   /* action = setLeagueSchedule(this.props.Data.matches);
-    this.props.dispatch(action);
- */
- // setListTeamsCreator(this.props.Data);
- //const setLeagueCreator = (text) => ({ type: SET_LEAGUE, league:text });
- //const storeLeagueSchedule = () => {this.props.store.getState().leagues.leagueSchedule};
-
-    //action = setLeagueSchedule(Data.matches);
-    //this.props.store.dispatch(setLeagueSchedule(leagueScheduleData.matches));  
-
-  	}	
+   	fetch(apiUrl, {
+   		method: 'GET',
+   		headers: {
+     	  'X-Auth-Token': API_KEY
+   		}
+   	})
+    .then((response) => response.json())
+    .then((response) => {
+      this.props.setListTeamsCreator(response.teams);
+      if (this.props.league_id !== this.props.match.params.league_id)
+        {let league={id:response.competition.code, name: response.competition.name};
+        this.props.setLeagueCreator(league);}
+        //this.setState({isLoaded: true});
+    })
+    .then((error) => {
+      this.setState({false: true});
+      this.setState({error});
+    })    	
+    .catch(error => console.log('parsing failed', error))
+  }	
 
   selTeam = (text) => {
       this.props.setTeamCreator(text);
-      }
+  }
 
 	render() {  
 		/*if (error) {
@@ -67,11 +52,10 @@ class TeamsContainer extends React.Component {
       		return <div>Loading...</div>;
   		} 
   		else {*/
-		  return <>
-           { this.props.isFetching ? <Preloader />: null} 
-			     <Teams teams = {this.props.listTeams} league_name={this.props.league_name} year={this.props.year} search={this.props.search} selTeam={this.selTeam}/>
-			</>
-		//}
+		return <>
+      { this.props.isFetching ? <Preloader />: null} 
+			  <Teams teams = {this.props.listTeams} league_name={this.props.league_name} year={this.props.year} search={this.props.search} selTeam={this.selTeam}/>
+		</>
 	}
 }
 

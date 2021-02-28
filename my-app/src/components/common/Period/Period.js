@@ -13,24 +13,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 class Period extends React.Component {
 
 
- update =() => {
-  /*
-  let nullLeagueShedule={
-    isFetching: false,
-    listSchedule:null
-  }
-
-  let nullTeamShedule={
-    isFetching: false,
-    listSchedule:null
-  }*/
-
-  this.props.setStartDatePeriod(new Date(this.props.year+"/01/01"));
-  this.props.setEndDatePeriod(new Date(this.props.year+"/12/31"));
-
-  /*this.props.setLeagueSchedule(nullLeagueShedule);
-  this.props.setTeamSchedule(nullTeamShedule);
-  */
+  update =() => {
+    this.props.setStartDatePeriod(new Date(this.props.year+"/01/01"));
+    this.props.setEndDatePeriod(new Date(this.props.year+"/12/31"));
   } 
 
   componentDidMount(prevProps) {
@@ -45,50 +30,50 @@ class Period extends React.Component {
 
   render() {
  
-  let setStartDate = (date) => {
-    this.props.setStartDatePeriod(date);	
-  }
+    let setStartDate = (date) => {
+      this.props.setStartDatePeriod(date);	
+    }
 
-   let setEndDate = (date) => {
-    this.props.setEndDatePeriod(date); 
-  }
+    let setEndDate = (date) => {
+      this.props.setEndDatePeriod(date); 
+    }
   
-  const minDate=this.props.year+"/01/01";
-  const maxDate=this.props.year+"/12/31";
+    const minDate=this.props.year+"/01/01";
+    const maxDate=this.props.year+"/12/31";
 
-  return <>    
-    <div className={s.date_filter_area}>
-    <div className={s.date_filter}>
-      <div className={s.title}>C:</div>
-      <DatePicker className={s.DatePicker}
-        dateFormat="yyyy-MM-dd"
-        selected={this.props.startDate}
-        onChange={setStartDate}
-        peekNextMonth
-        showMonthDropdown
-        minDate={new Date(minDate)}
-        maxDate={new Date(maxDate)}
-        selectsStart
-        startDate = {this.props.startDate}
-      />
-    </div>
-    <div className={s.date_filter}>
-      <div className={s.title}>По:</div>
-      <DatePicker className={s.DatePicker}
-        dateFormat="yyyy-MM-dd"
-        selected={this.props.endDate}
-        onChange={setEndDate}
-        peekNextMonth
-        showMonthDropdown
-        minDate={new Date(minDate)}
-        maxDate={new Date(maxDate)}
-        selectsEnd
-        endDate = {this.props.endDate}
-      />
-    </div>
-    </div> 	
+    return <>    
+      <div className={s.date_filter_area}>
+        <div className={s.date_filter}>
+          <div className={s.title}>C:</div>
+          <DatePicker className={s.DatePicker}
+            dateFormat="yyyy-MM-dd"
+            selected={this.props.startDate}
+            onChange={setStartDate}
+            peekNextMonth
+            showMonthDropdown
+            minDate={new Date(minDate)}
+            maxDate={new Date(maxDate)}
+            selectsStart
+            startDate = {this.props.startDate}
+          />
+        </div>
+        <div className={s.date_filter}>
+          <div className={s.title}>По:</div>
+          <DatePicker className={s.DatePicker}
+            dateFormat="yyyy-MM-dd"
+            selected={this.props.endDate}
+            onChange={setEndDate}
+            peekNextMonth
+            showMonthDropdown
+            minDate={new Date(minDate)}
+            maxDate={new Date(maxDate)}
+            selectsEnd
+            endDate = {this.props.endDate}
+          />
+        </div>
+      </div> 	
   </>
-}
+  }
 }
 
 let mapStateToProps = (state) => ({

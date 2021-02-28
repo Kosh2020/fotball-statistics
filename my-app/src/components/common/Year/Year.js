@@ -14,12 +14,13 @@ const Years = (props) => {
   	props.dispatch(action); 	
   }
  
-  return (<div className={s.year}> 
-  			<select className={s.check_year} onChange={selectYear} value={props.year}>
-            	{ListYears}
-          	</select>
-          	
-          </div>	);
+  return <>
+    <div className={s.year}> 
+  	 	<select className={s.check_year} onChange={selectYear} value={props.year}>
+       	{ListYears}
+     	</select>
+    </div>	
+  </>
 }
 
 

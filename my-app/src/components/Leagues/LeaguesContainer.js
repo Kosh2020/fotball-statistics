@@ -7,9 +7,6 @@ import Leagues from './Leagues';
 import {setLeagueCreator} from "../../redux/leagues-reducer";
 
 class LeaguesContainer  extends React.Component {
-
-	componentDidMount(){
-	}
 	
 	selLeague = (text) => {
     	this.props.setLeagueCreator(text);

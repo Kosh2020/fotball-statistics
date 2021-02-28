@@ -1,11 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import s from './Teams.module.css';
-import  Search  from '../common/Search/Search';
+import Search  from '../common/Search/Search';
 import Team  from './Team/Team';
  
-
-
 const Teams = (props) => {
   const TITLE = 'Команды лиги "'+props.league_name+'" '+props.year +' год';;
  
@@ -30,24 +28,16 @@ const Teams = (props) => {
     return result;
   }
 
-/*  if (error) {
-      return <div>Error: {error.message}</div>;
-  } 
-  else if (!loaded) {
-      return <div>Loading...</div>;
-  } 
-  else {*/
-	  return(
-	    <div className={s.content}>
-        <div className={s.title}>
-          <h2>{TITLE}</h2>
-        </div> 
-        <ul>
-          
-          <ListTeams/>
-        </ul>
-      </div>)
-	//}
+  return<>
+	  <div className={s.content}>
+      <div className={s.title}>
+        <h2>{TITLE}</h2>
+      </div> 
+      <ul>  
+        <ListTeams/>
+      </ul>
+    </div>
+  </>  
 }
 
 export default withRouter(Teams);

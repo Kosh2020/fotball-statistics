@@ -1,8 +1,0 @@
- /*     <Header
-                  title={TITLE}
-                  userName='Иванов Иван Иванович'
-                  className='Home-Header'
-                  renderIcon={() => (
-              <House className='Header-Icon'/>
-            )}
-          />*/

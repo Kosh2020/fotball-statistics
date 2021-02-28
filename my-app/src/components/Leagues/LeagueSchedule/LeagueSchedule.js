@@ -9,26 +9,17 @@ import Search  from '../../common/Search/Search';
 const LeagueSchedule = (props) => {
   let state = props;
   const TITLE = 'Расписание лиги  "'+props.league_name+'"  '+props.year +' год';
-
-  // let Data=props.Data.matches;
   let Data=null;
+
   if (props.leagueSchedule !== null){
       Data=props.leagueSchedule.listSchedule;}
- 
-  //console.log("Data="+Data)
 
   let filteredDataLeagues = null;
 
- /* if (Data !== undefined){ 
-      filteredDataLeagues = Data.filter( leaguesSchedule => {
-        return (leaguesSchedule.homeTeam.name+leaguesSchedule.awayTeam.name).toLowerCase().includes(props.search.toLowerCase())
-      })
-  }*/
-    
- if ((Data !== null)&(Data !== undefined)){ 
-      filteredDataLeagues = Data.filter( leaguesSchedule => {
-        return (leaguesSchedule.homeTeam.name+leaguesSchedule.awayTeam.name).toLowerCase().includes(props.search.toLowerCase())
-      })
+  if ((Data !== null)&(Data !== undefined)){ 
+    filteredDataLeagues = Data.filter( leaguesSchedule => {
+      return (leaguesSchedule.homeTeam.name+leaguesSchedule.awayTeam.name).toLowerCase().includes(props.search.toLowerCase())
+    })
   }
 
   let listItems=<div>Нет данных</div> 
@@ -48,7 +39,7 @@ const LeagueSchedule = (props) => {
   } 
   else {
 */
-	return ( 
+	return <>
     <div className={s.content}>
     <div className={s.title}>
       <h2>{TITLE}</h2>
@@ -58,8 +49,7 @@ const LeagueSchedule = (props) => {
         </ul>
         
     </div>
-	) 
-//}
+	</> 
 }
 
 export default LeagueSchedule;

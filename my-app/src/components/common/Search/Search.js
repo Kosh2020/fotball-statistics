@@ -11,10 +11,11 @@ const Search = (props) => {
     
   }	
         
-  return (<div className={s.search}>
-  		   
-            <input type="text" placeholder="Поиск" onChange={selectSearch} />
-  		    </div>);
+  return <>
+  	<div className={s.search}>
+  	    <input type="text" placeholder="Поиск" onChange={selectSearch} />
+  	</div>
+  </>
 }
 
 export default Search;
