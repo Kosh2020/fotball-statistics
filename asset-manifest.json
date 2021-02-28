@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/fotball-statistics/static/css/main.373f0713.chunk.css",
-    "main.js": "/fotball-statistics/static/js/main.b2c0982d.chunk.js",
-    "main.js.map": "/fotball-statistics/static/js/main.b2c0982d.chunk.js.map",
+    "main.css": "/fotball-statistics/static/css/main.88f8a298.chunk.css",
+    "main.js": "/fotball-statistics/static/js/main.4b0d9d18.chunk.js",
+    "main.js.map": "/fotball-statistics/static/js/main.4b0d9d18.chunk.js.map",
     "runtime-main.js": "/fotball-statistics/static/js/runtime-main.9a29018c.js",
     "runtime-main.js.map": "/fotball-statistics/static/js/runtime-main.9a29018c.js.map",
     "static/css/2.61833881.chunk.css": "/fotball-statistics/static/css/2.61833881.chunk.css",
-    "static/js/2.18a924a5.chunk.js": "/fotball-statistics/static/js/2.18a924a5.chunk.js",
-    "static/js/2.18a924a5.chunk.js.map": "/fotball-statistics/static/js/2.18a924a5.chunk.js.map",
+    "static/js/2.4c97192f.chunk.js": "/fotball-statistics/static/js/2.4c97192f.chunk.js",
+    "static/js/2.4c97192f.chunk.js.map": "/fotball-statistics/static/js/2.4c97192f.chunk.js.map",
     "index.html": "/fotball-statistics/index.html",
-    "precache-manifest.8d5b4d7a8c6e1944d5eedc3407559181.js": "/fotball-statistics/precache-manifest.8d5b4d7a8c6e1944d5eedc3407559181.js",
+    "precache-manifest.1707b6e5ea172d749e225a873119ca06.js": "/fotball-statistics/precache-manifest.1707b6e5ea172d749e225a873119ca06.js",
     "service-worker.js": "/fotball-statistics/service-worker.js",
     "static/css/2.61833881.chunk.css.map": "/fotball-statistics/static/css/2.61833881.chunk.css.map",
-    "static/css/main.373f0713.chunk.css.map": "/fotball-statistics/static/css/main.373f0713.chunk.css.map",
-    "static/js/2.18a924a5.chunk.js.LICENSE.txt": "/fotball-statistics/static/js/2.18a924a5.chunk.js.LICENSE.txt",
-    "static/media/logo2.png": "/fotball-statistics/static/media/logo2.2d3efbfa.png",
-    "static/media/teams.png": "/fotball-statistics/static/media/teams.9b6cae15.png"
+    "static/css/main.88f8a298.chunk.css.map": "/fotball-statistics/static/css/main.88f8a298.chunk.css.map",
+    "static/js/2.4c97192f.chunk.js.LICENSE.txt": "/fotball-statistics/static/js/2.4c97192f.chunk.js.LICENSE.txt",
+    "static/media/logo2.png": "/fotball-statistics/static/media/logo2.2d3efbfa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9a29018c.js",
     "static/css/2.61833881.chunk.css",
-    "static/js/2.18a924a5.chunk.js",
-    "static/css/main.373f0713.chunk.css",
-    "static/js/main.b2c0982d.chunk.js"
+    "static/js/2.4c97192f.chunk.js",
+    "static/css/main.88f8a298.chunk.css",
+    "static/js/main.4b0d9d18.chunk.js"
   ]
 }
