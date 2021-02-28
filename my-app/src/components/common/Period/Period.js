@@ -58,7 +58,7 @@ class Period extends React.Component {
           />
         </div>
         <div className={s.date_filter}>
-          <div className={s.title}>По:</div>
+          <div style={{marginRight:'4px'}} className={s.title}>По:</div>
           <DatePicker className={s.DatePicker}
             dateFormat="yyyy-MM-dd"
             selected={this.props.endDate}

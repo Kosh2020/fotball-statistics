@@ -23,4 +23,8 @@ h2{
 .title{
     padding-top: 30px;
 }
+
+h2{
+	font-size: 1.0em;
+}
 }
