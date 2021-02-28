@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc7c24bc9bcb39c1d4ddc917b6d5fcb1",
+    "revision": "35ac825b8a6e23e12e32e1396056503c",
     "url": "/fotball-statistics/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fotball-statistics/static/css/2.61833881.chunk.css"
   },
   {
-    "revision": "e4cd782bb6cd3062025d",
-    "url": "/fotball-statistics/static/css/main.88f8a298.chunk.css"
+    "revision": "596560bd2c3aa894f378",
+    "url": "/fotball-statistics/static/css/main.0797da9c.chunk.css"
   },
   {
     "revision": "ba346ebd1104d400d018",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fotball-statistics/static/js/2.4c97192f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e4cd782bb6cd3062025d",
-    "url": "/fotball-statistics/static/js/main.4b0d9d18.chunk.js"
+    "revision": "596560bd2c3aa894f378",
+    "url": "/fotball-statistics/static/js/main.540cd1c9.chunk.js"
   },
   {
     "revision": "f428df7ed21da21b4814",
