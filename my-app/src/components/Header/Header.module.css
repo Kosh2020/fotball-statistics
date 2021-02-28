@@ -1,0 +1,39 @@
+.header{
+  background-color: #82c684;
+  grid-area:h;
+  height: 55px;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%
+}
+
+.header img{
+  /*width:57px;*/
+  height: 45px;
+  float:left;
+  margin: 5px;
+}
+
+.title{
+  display: block;
+  vertical-align: middle;	
+  float:left;
+}
+
+@media only screen and (max-width: 700px) { 
+.title {
+	 margin-top: 10px;
+}
+h1 {
+   height: 25px;		
+  font-size: 27px;
+   }
+}
+
+@media only screen and (max-width: 400px) { 
+h1 {
+  font-size: 20px;}
+}

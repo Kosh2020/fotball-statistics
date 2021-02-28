@@ -1,0 +1,19 @@
+.year{
+	margin-top: 75px;
+    grid-area:p;
+    z-index: 500;
+    float:left;
+}    
+
+.check_year{
+    font-weight: bold;
+    float: left;
+    margin-left: 23px;
+    width: 111px;
+}
+
+@media only screen and (max-width: 1024px) { 
+.year{
+	margin-top: 24px;
+}
+}

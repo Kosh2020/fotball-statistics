@@ -1,0 +1,15 @@
+.item{
+ height:50px;
+
+ /*border: 1px solid #333;*/
+
+}
+
+.refs_item{
+ float:right;
+}
+
+.ref{
+ margin-left: 10px;
+  font-size:12px;
+}

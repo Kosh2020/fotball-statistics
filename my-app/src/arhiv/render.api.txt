@@ -1,0 +1,67 @@
+ constructor(){
+    super();
+     this.state={ 
+      error: null,
+      isLoaded : true,
+      leagues: leag,/*[]*/
+      teams: teams
+    }
+      
+  }//constructor
+  
+/*  componentDidMount(){
+    fetch("https://apiv2.apifootball.com/?action=get_leagues&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9")
+    .then(res => res.json())
+    .then(
+      (result) => {
+        this.setState({
+          isLoaded: true,
+          items: result
+        });
+      },
+      (error) => {
+        this.setState({
+          isLoaded:true,
+          error
+        });
+      }
+      )
+  }
+*/
+
+
+
+/***********RENDER**********************************//
+
+    const {error, isLoaded, items} = this.state;
+    console.log("error"+error);
+    console.log("items"+items);
+    if (error) {
+      return <p> Error {error.message} </p>
+    } else if (!isLoaded) {
+      return <p> Loading...</p>
+    } else {
+      return (
+        <div className="app-wrapper"><>
+          <Navbar/>
+          <Route><>
+          <ul>
+            <h1>Лиги</h1>
+            {this.state.leagues.map(item => (  
+              <li key={item.league_id}>
+                {item.league_name}
+              </li> 
+            ))}
+          </ul>
+
+          <ul>
+            <h1>Команды</h1>
+            {teams.map(item => (  
+             <li key={item.team_key}>
+              {item.team_name}
+             </li> 
+            ))}
+          </ul> 
+        </div>
+      )
+    };

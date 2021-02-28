@@ -1,0 +1,19 @@
+/* Key e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+
+https://apiv2.apifootball.com/?action=get_leagues&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+https://apiv2.apifootball.com/?action=get_teams&league_id=148&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+2645 2611 2618 2622 2623
+https://apiv2.apifootball.com/?action=get_events&from=2019-04-01&to=2019-04-03&league_id=149&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+
+https://apiv2.apifootball.com/?action=get_events&from=2019-04-01&to=2019-04-03&league_id=149&team_id=2623&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+https://apiv2.apifootball.com/?action=get_events&from=2019-04-01&to=2019-04-03&team_id=2623&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+
+https://api.football-data.org/v2/competitions/2021
+https://api.football-data.org/v2/competitions/PL/matches?season=2019
+https://api.football-data.org/v2/competitions/PL/teams?season=2019
+https://api.football-data.org/v2/teams/57/matches?season=2019
+79c229e5c59445cdb091adf3d2bee52b
+
+
+/v2/teams/{id}/matches/
+https://api.football-data.org/v2/competitions/CL/matches?season=2019

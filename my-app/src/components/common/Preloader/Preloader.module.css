@@ -1,0 +1,11 @@
+.period{
+	margin-top: 75px;
+    grid-area:p;
+}    
+
+.check_period{
+    font-weight: bold;
+    float: left;
+    margin-left: 23px;
+    width: 111px;
+}

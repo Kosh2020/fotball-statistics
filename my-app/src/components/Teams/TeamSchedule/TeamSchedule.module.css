@@ -1,0 +1,20 @@
+.content{
+	margin-top: 43px;
+}
+
+.title{
+	padding-bottom: 30px
+}
+
+h2{
+	line-height: 1.5em;
+}
+
+.date_text{
+	color:#519657;
+}
+
+.item{
+	height: 50px;
+	list-style-type: none;
+}

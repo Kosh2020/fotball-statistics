@@ -1,0 +1,14 @@
+.search{
+
+}
+
+.search input{
+    float: right;
+    /* margin-right: 23px; */
+    margin-top: 74px;}
+
+@media only screen and (max-width: 1024px) { 
+.search input{
+	margin-top: 24px;
+}
+}

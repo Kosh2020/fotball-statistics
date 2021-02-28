@@ -1,0 +1,34 @@
+body{
+  font-family: Roboto,sans-serif;
+  font-size: 1em;
+}
+
+.app-wrapper{
+  position: relative;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: #f6f7f7;
+  text-align: center;
+  min-height: 600px;
+  margin: 0 auto;
+  /*color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+*/
+  display:grid;
+  grid-template-rows: 55px 45px 45px;
+  grid-template-areas: 
+  "h"
+  "n"
+  "p"
+  "c";
+}
+
+.app-wrapper-content{
+  background-color: darkseagreen;
+}
+
+h1, a{
+  color: #fff;
+}

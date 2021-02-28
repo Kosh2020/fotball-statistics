@@ -1,0 +1,61 @@
+.date_filter_area{
+	font-weight: bold;
+    grid-area:p;
+    font-family: Roboto,sans-serif;
+    font-size: 1em;
+    margin: 0 20px;
+    margin-top: 6px;
+    margin-left: 153px;
+    color:#333;
+    font-size: 0.7em;
+    height: 11px;
+}    
+
+.date_filter{
+	float:left;
+}
+
+.DatePicker{
+	float:left;
+	width: 70px;
+	margin: -6px 5px;
+	font-weight: bold;
+	font-family: Roboto,sans-serif;
+    font-size: 1em;
+}
+
+.title{
+	float:left;
+	margin-right: 10px;
+}
+
+.DatePicker>input{
+	font-weight: bold;
+	font-family: Roboto,sans-serif;
+    font-size: 0.7em;
+    margin: 0;
+    color:#333;
+	height: 13px;
+    margin: -5px 0px;
+	float: none;
+	margin:0;
+}
+
+@media only screen and (max-width: 1024px) { 
+
+.date_filter_area{
+	margin-top: -45px;}
+
+}
+
+@media only screen and (max-width: 750px) { 
+
+.date_filter_area{
+	float: left;
+    margin-left: 20px;}
+
+
+ .date_filter{   float: none; 
+    margin-bottom: 20px;}
+
+}

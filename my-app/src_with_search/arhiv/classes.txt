@@ -1,0 +1,1 @@
+{`${s.nav} ${s.active}`} - 2 класса (item+active)

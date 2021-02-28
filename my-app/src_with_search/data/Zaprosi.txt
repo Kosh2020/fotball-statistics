@@ -1,0 +1,6 @@
+/* Key e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+
+https://apiv2.apifootball.com/?action=get_leagues&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+https://apiv2.apifootball.com/?action=get_teams&league_id=148&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9
+
+https://apiv2.apifootball.com/?action=get_events&from=2020-04-01&to=2021-01-01&league_id=177&APIkey=e2cbc09e57d33b6ab8d17dd2154867fe96ba48b56309658c4b45e82ce6d3cfd9

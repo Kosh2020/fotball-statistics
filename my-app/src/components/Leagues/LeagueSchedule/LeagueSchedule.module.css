@@ -1,0 +1,28 @@
+.content{
+	margin-top:43px;
+}
+.item{
+	height: 50px;
+	list-style-type: none;
+}
+.title{
+	padding-bottom: 30px
+}
+
+.date_text{
+	color:#519657;
+}
+
+ul{
+	padding:0;
+}
+
+h2{
+	line-height: 1.5em;
+}
+
+@media only screen and (max-width: 750px) { 
+.title{
+    padding-top: 30px;
+}
+}
