@@ -153,8 +153,10 @@ float:left;}
 @media only screen and (max-width: 1024px) { 
 .menu__btn {
   opacity: 1;
+  z-index: 1000;
   }
 .menu__box {
+
   width:300px;
   height: 100%;
   right : 0px;

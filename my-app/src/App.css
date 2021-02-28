@@ -17,7 +17,6 @@ h1,h2{
 .app-wrapper{
   position: relative;
   width: 100%;
-  
   overflow: hidden;
   background-color: #f6f7f7;
   text-align: center;

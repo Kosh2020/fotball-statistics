@@ -18,8 +18,6 @@ let initialState={
   isFetching: false,
   teamSchedule:{
     isFetching: false,
-    startDate:new Date("2000/02/08"),
-    endDate:new Date("2021/02/08"),
     listSchedule:null
   }
 };
